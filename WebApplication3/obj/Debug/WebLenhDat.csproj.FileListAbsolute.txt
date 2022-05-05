@@ -1,0 +1,138 @@
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\csc.exe
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\System.Collections.Immutable.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\vbc.exe
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\VBCSCompiler.exe
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\roslyn\VBCSCompiler.exe.config
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\WebApplication3.dll.config
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\WebApplication3.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\WebApplication3.pdb
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Antlr3.Runtime.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\EntityFramework.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\EntityFramework.SqlServer.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.Google.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Web.Infrastructure.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Newtonsoft.Json.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Owin.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.Helpers.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.Mvc.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.Optimization.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.Razor.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.WebPages.Deployment.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.WebPages.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.WebPages.Razor.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\WebGrease.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.Helpers.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.Mvc.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.Optimization.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.Razor.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.WebPages.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.WebPages.Deployment.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\System.Web.WebPages.Razor.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Antlr3.Runtime.pdb
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Newtonsoft.Json.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\EntityFramework.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\EntityFramework.SqlServer.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.Google.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\obj\Debug\WebLenhDat.csprojResolveAssemblyReference.cache
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\obj\Debug\WebApplication3.dll
+c:\users\trung nguyen\onedrive\tài liệu\visual studio 2015\Projects\WebApplication3\WebApplication3\obj\Debug\WebApplication3.pdb
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\csc.exe
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\System.Collections.Immutable.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\System.Reflection.Metadata.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\vbc.exe
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\VBCSCompiler.exe
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\roslyn\VBCSCompiler.exe.config
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\WebApplication3.dll.config
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\WebApplication3.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\WebApplication3.pdb
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Antlr3.Runtime.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\EntityFramework.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\EntityFramework.SqlServer.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.Google.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Web.Infrastructure.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Newtonsoft.Json.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Owin.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.Helpers.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.Mvc.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.Optimization.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.Razor.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.WebPages.Deployment.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.WebPages.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.WebPages.Razor.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\WebGrease.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.Helpers.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.Mvc.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.Optimization.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.Razor.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.WebPages.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.WebPages.Deployment.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\System.Web.WebPages.Razor.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Antlr3.Runtime.pdb
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Newtonsoft.Json.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\EntityFramework.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\EntityFramework.SqlServer.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.Google.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Repo\TTCS\WebDatLenh\WebApplication3\obj\Debug\WebLenhDat.csprojResolveAssemblyReference.cache
+F:\Repo\TTCS\WebDatLenh\WebApplication3\obj\Debug\WebApplication3.dll
+F:\Repo\TTCS\WebDatLenh\WebApplication3\obj\Debug\WebApplication3.pdb

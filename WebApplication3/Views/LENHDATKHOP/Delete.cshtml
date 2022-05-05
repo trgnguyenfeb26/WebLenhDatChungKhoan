@@ -1,0 +1,76 @@
+﻿@model WebApplication3.Models.LENHDAT
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 style="margin-left:10px">XÓA LỆNH</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+
+    <table border="1" style="text-align: center">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Mã CP
+            </th>
+            <th>
+                Ngày Đặt
+            </th>
+            <th>
+                Loại GD
+            </th>
+            <th>
+                Loại Lệnh
+            </th>
+            <th>
+                Số Lượng
+            </th>
+            <th>
+                Giá Đặt
+            </th>
+            <th>
+                Trạng Thái Lệnh
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MACP)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.NGAYDAT)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.LOAIGD)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.LOAILENH)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.SOLUONG)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.GIADAT)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.TRANGTHAILENH)
+            </td>
+        </tr>
+   </table>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color" style="margin-top:20px; margin-left:200px">
+                <input style="margin-right:10px; background-color:orangered"type="submit" value="Xóa"/> |
+                <button style="margin-left:10px" onclick="location.href='@Url.Action("Index", "LENHDATKHOP")';return false;">Hủy</button>
+            </div>
+        }
+</div>

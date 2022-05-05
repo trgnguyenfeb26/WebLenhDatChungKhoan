@@ -1,0 +1,255 @@
+﻿@using WebApplication3.Models'
+@model dynamic
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+      
+        .form{
+            width:600px;
+            background-color:   lightblue;
+            height:250px;
+        }
+        .tableLD{
+            margin-left:auto;
+            margin-top:auto;
+        }
+
+        html {
+           
+        }
+
+        h1 {
+            margin-top: 25px;
+            margin-left: 130px;
+        }
+
+        label {
+            
+            margin-top: 300px;
+            margin-left: 30px;
+            font-weight: 900;
+        }
+
+        input {
+            width: 140px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        select {
+            width: 148px;
+            margin-top: 10px;
+            margin-left: 10px;
+            height:22px;
+        }
+        
+        .btn {
+            width: 80px;
+        }
+        /* Tạo ba cột bằng nhau, float cạnh nhau */
+/* Tạo ba cột bằng nhau, float cạnh nhau */
+.column {
+  float: left;
+}
+
+/* Cột bên trái và phải */
+.column.side {
+  width: 50%;
+}
+
+/* Cột chính giữa */
+.column.middle {
+  width: 50%;
+}
+    </style>
+
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <form class="form" action="/home/Create" method="post">
+                <h1>ĐẶT LỆNH MUA BÁN</h1>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="LoaiLenh" width="300">Loại Lệnh</label>
+                        </td>
+                        <td>
+                            <select name="LoaiLenh">
+                                <option value="LTT">Lệnh thông thường</option>
+                            </select>
+                        </td>
+                        <td><label for="Lenh">Lệnh</label></td>
+                        <td>
+                            <select name="Lenh">
+                                <option value="LO">LO</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Macp">Mã CP</label></td>
+                        <td><input type="text" name="Macp" maxlength="10"  style='text-transform:uppercase' required pattern="[A-Za-z]+" /></td>
+                        <td><label for="LoaiGD1">Mua/Bán</label></td>
+                        <td>
+                            <select id="LoaiGD" name="LoaiGD" onclick="">
+                                <option value="M">Mua</option>
+                                <option value="B">Bán</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="soluongMB">Khối lượng</label></td>
+                        <td>
+                            <input type="number" name="soluongMB"
+                                   min="0" max="2000000000" value="0" step="10" />
+                        </td>
+                        <td><label for="NhanLenh">Nhân lệnh</label></td>
+                        <td>
+                            <input type="number" name="NhanLenh"
+                                   min="1" max="2000000000"   value="1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="giadatMB">Giá</label></td>
+                        <td>
+                            <input type="number" name="giadatMB"
+                                   min="0" max="2000000000"  value="0" step="100"/>
+                        </td>
+                        <td><label for="SlMax">SL max</label></td>
+                        <td><input type="text" name="SLMax" value="0" disabled /></td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2"><input class="btn" type="submit" name="submit" value="Xác nhận" style="background-color: darkorange; margin-left:100px" /></th>
+                            <th colspan="2"><input class="btn" type="reset" name="reset" value="Làm lại"/></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+            <h2 style=" margin-left: 140px">BẢNG LỆNH KHỚP</h2>
+            <table class="tableLK" border="1" style="text-align: center">
+                <tr>
+                    <th>
+                        ID Khớp
+                    </th>
+                    <th>
+                        Mã CP
+                    </th>
+                    <th>
+                        Ngày Khớp
+                    </th>
+                    <th>
+                        Số Lượng Khớp
+                    </th>
+                    <th>
+                        Giá Khớp
+                    </th>
+                    <th>
+                        ID Lệnh Đặt
+                    </th>
+                </tr>
+
+                @foreach (LENHKHOP item in Model.LenhKhopList)
+            {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IDKHOP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LENHDAT.MACP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NGAYKHOP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SOLUONGKHOP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.GIAKHOP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IDLENHDAT)
+
+                    </tr>
+                }
+
+            </table>
+        </div>
+        <input id="alertdone" value="@ViewBag.donesent" style="display:none">
+        <div class="column" style=" margin-left: 50px;">
+            <h2 style=" margin-left: 190px;">BẢNG LỆNH ĐẶT</h2>
+            <table class="tableLD" border="1" style="text-align: center">
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Mã CP
+                    </th>
+                    <th>
+                        Ngày Đặt
+                    </th>
+                    <th>
+                        Loại GD
+                    </th>
+                    <th>
+                        Loại Lệnh
+                    </th>
+                    <th>
+                        Số Lượng
+                    </th>
+                    <th>
+                        Giá Đặt
+                    </th>
+                    <th>
+                        Trạng Thái Lệnh
+                    </th>
+                </tr>
+
+                @foreach (LENHDAT item in Model.LenhDatList)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MACP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NGAYDAT)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LOAIGD)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LOAILENH)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SOLUONG)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.GIADAT)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TRANGTHAILENH)
+                        </td>
+                        <th>
+                            
+                               @{ if(item.TRANGTHAILENH == "Chờ khớp") { @Html.ActionLink("XÓA LỆNH", "Delete", new {id = item.ID })}
+                            }
+                        </th>
+                    </tr>
+                }
+
+            </table>
+        </div>
+     </div>
+
+</body>
+
+</html>
+

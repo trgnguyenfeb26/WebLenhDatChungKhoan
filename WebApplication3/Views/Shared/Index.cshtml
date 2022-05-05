@@ -1,0 +1,132 @@
+﻿@model IEnumerable<WebApplication3.Models.LENHDAT>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>BẢNG LỆNH ĐẶT</h2>
+<form action="/home/Create" method="post">
+    <h1>ĐẶT LỆNH MUA BÁN</h1>
+    <table>
+        <tr>
+            <td>
+                <label for="LoaiLenh" width="300">Loại Lệnh</label>
+            </td>
+            <td>
+                <select name="LoaiLenh">
+                    <option value="LTT">Lệnh thông thường</option>
+                </select>
+            </td>
+            <td><label for="Lenh">Lệnh</label></td>
+            <td>
+                <select name="Lenh">
+                    <option value="LO">LO</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Macp">Mã CP</label></td>
+            <td><input type="text" name="Macp" required /></td>
+            <td><label for="LoaiGD1">Mua/Bán</label></td>
+            <td>
+                <select id="LoaiGD" name="LoaiGD" onclick="">
+                    <option value="M">Mua</option>
+                    <option value="B">Bán</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="soluongMB">Khối lượng</label></td>
+            <td>
+                <input type="number" name="soluongMB"
+                       min="1" max="100000000000" value="0" />
+            </td>
+            <td><label for="NhanLenh">Nhân lệnh</label></td>
+            <td>
+                <input type="number" name="NhanLenh"
+                       min="1" max="100000000000" step="1" value="1" />
+            </td>
+        </tr>
+        <tr>
+            <td><label for="giadatMB">Giá</label></td>
+            <td>
+                <input type="number" name="giadatMB"
+                       min="1" max="100000000000" value="0" />
+            </td>
+            <td><label for="SlMax">SL max</label></td>
+            <td><input type="text" name="SLMax" value="0" disabled /></td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th colspan="2"><input class="btn" type="submit" name="submit" /></th>
+                <th colspan="2"><input class="btn" type="reset" name="reset" /></th>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+</form>
+<p>
+    <button onclick="location.href='@Url.Action("Index", "Home")';return false;">ĐẶT LỆNH</button>
+    <button onclick="location.href='@Url.Action("Index", "LENHKHOPs")';return false;">BẢNG LỆNH KHỚP</button>   
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" border="1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MACP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NGAYDAT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LOAIGD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LOAILENH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SOLUONG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GIADAT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRANGTHAILENH)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MACP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NGAYDAT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LOAIGD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LOAILENH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SOLUONG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GIADAT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRANGTHAILENH)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+    
+</table>

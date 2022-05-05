@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CKModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="LENHDAT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MACP" Type="nchar" MaxLength="7" Nullable="false" />
+          <Property Name="NGAYDAT" Type="datetime" Nullable="false" />
+          <Property Name="LOAIGD" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="LOAILENH" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="SOLUONG" Type="int" Nullable="false" />
+          <Property Name="GIADAT" Type="float" Nullable="false" />
+          <Property Name="TRANGTHAILENH" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LENHKHOP">
+          <Key>
+            <PropertyRef Name="IDKHOP" />
+          </Key>
+          <Property Name="IDKHOP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NGAYKHOP" Type="datetime" Nullable="false" />
+          <Property Name="SOLUONGKHOP" Type="int" Nullable="false" />
+          <Property Name="GIAKHOP" Type="float" Nullable="false" />
+          <Property Name="IDLENHDAT" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_LENHKHOP_LENHDAT1">
+          <End Role="LENHDAT" Type="Self.LENHDAT" Multiplicity="1" />
+          <End Role="LENHKHOP" Type="Self.LENHKHOP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LENHDAT">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="LENHKHOP">
+              <PropertyRef Name="IDLENHDAT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="CursorLoaiGD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OutCrsr" Type="int" Mode="InOut" />
+          <Parameter Name="macp" Type="nvarchar" Mode="In" />
+          <Parameter Name="Ngay" Type="nvarchar" Mode="In" />
+          <Parameter Name="LoaiGD" Type="char" Mode="In" />
+        </Function>
+        <Function Name="SP_KHOPLENH_LO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="macp" Type="nvarchar" Mode="In" />
+          <Parameter Name="Ngay" Type="nvarchar" Mode="In" />
+          <Parameter Name="LoaiGD" Type="char" Mode="In" />
+          <Parameter Name="soluongMB" Type="int" Mode="In" />
+          <Parameter Name="giadatMB" Type="float" Mode="In" />
+        </Function>
+        <EntityContainer Name="CKModelStoreContainer">
+          <EntitySet Name="LENHDAT" EntityType="Self.LENHDAT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LENHKHOP" EntityType="Self.LENHKHOP" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_LENHKHOP_LENHDAT1" Association="Self.FK_LENHKHOP_LENHDAT1">
+            <End Role="LENHDAT" EntitySet="LENHDAT" />
+            <End Role="LENHKHOP" EntitySet="LENHKHOP" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CKModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="LENHDAT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MACP" Type="String" MaxLength="7" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="NGAYDAT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LOAIGD" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="LOAILENH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="SOLUONG" Type="Int32" Nullable="false" />
+          <Property Name="GIADAT" Type="Double" Nullable="false" />
+          <Property Name="TRANGTHAILENH" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="LENHKHOP" Relationship="Self.FK_LENHKHOP_LENHDAT1" FromRole="LENHDAT" ToRole="LENHKHOP" />
+        </EntityType>
+        <EntityType Name="LENHKHOP">
+          <Key>
+            <PropertyRef Name="IDKHOP" />
+          </Key>
+          <Property Name="IDKHOP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NGAYKHOP" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SOLUONGKHOP" Type="Int32" Nullable="false" />
+          <Property Name="GIAKHOP" Type="Double" Nullable="false" />
+          <Property Name="IDLENHDAT" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="LENHDAT" Relationship="Self.FK_LENHKHOP_LENHDAT1" FromRole="LENHKHOP" ToRole="LENHDAT" />
+        </EntityType>
+        <Association Name="FK_LENHKHOP_LENHDAT1">
+          <End Role="LENHDAT" Type="Self.LENHDAT" Multiplicity="1" />
+          <End Role="LENHKHOP" Type="Self.LENHKHOP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LENHDAT">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="LENHKHOP">
+              <PropertyRef Name="IDLENHDAT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CKEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="LENHDAT" EntityType="Self.LENHDAT" />
+          <EntitySet Name="LENHKHOP" EntityType="Self.LENHKHOP" />
+          <AssociationSet Name="FK_LENHKHOP_LENHDAT1" Association="Self.FK_LENHKHOP_LENHDAT1">
+            <End Role="LENHDAT" EntitySet="LENHDAT" />
+            <End Role="LENHKHOP" EntitySet="LENHKHOP" />
+          </AssociationSet>
+          <FunctionImport Name="CursorLoaiGD">
+            <Parameter Name="OutCrsr" Mode="InOut" Type="Int32" />
+            <Parameter Name="macp" Mode="In" Type="String" />
+            <Parameter Name="Ngay" Mode="In" Type="String" />
+            <Parameter Name="LoaiGD" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_KHOPLENH_LO">
+            <Parameter Name="macp" Mode="In" Type="String" />
+            <Parameter Name="Ngay" Mode="In" Type="String" />
+            <Parameter Name="LoaiGD" Mode="In" Type="String" />
+            <Parameter Name="soluongMB" Mode="In" Type="Int32" />
+            <Parameter Name="giadatMB" Mode="In" Type="Double" />
+          </FunctionImport>
+          <FunctionImport Name="SP_KHOPLENH_LO1" EntitySet="LENHDAT" ReturnType="Collection(CKModel.LENHDAT)">
+            <Parameter Name="macp" Mode="In" Type="String" />
+            <Parameter Name="Ngay" Mode="In" Type="String" />
+            <Parameter Name="LoaiGD" Mode="In" Type="String" />
+            <Parameter Name="soluongMB" Mode="In" Type="Int32" />
+            <Parameter Name="giadatMB" Mode="In" Type="Double" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CKModelStoreContainer" CdmEntityContainer="CKEntities">
+          <EntitySetMapping Name="LENHDAT">
+            <EntityTypeMapping TypeName="CKModel.LENHDAT">
+              <MappingFragment StoreEntitySet="LENHDAT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MACP" ColumnName="MACP" />
+                <ScalarProperty Name="NGAYDAT" ColumnName="NGAYDAT" />
+                <ScalarProperty Name="LOAIGD" ColumnName="LOAIGD" />
+                <ScalarProperty Name="LOAILENH" ColumnName="LOAILENH" />
+                <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+                <ScalarProperty Name="GIADAT" ColumnName="GIADAT" />
+                <ScalarProperty Name="TRANGTHAILENH" ColumnName="TRANGTHAILENH" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LENHKHOP">
+            <EntityTypeMapping TypeName="CKModel.LENHKHOP">
+              <MappingFragment StoreEntitySet="LENHKHOP">
+                <ScalarProperty Name="IDKHOP" ColumnName="IDKHOP" />
+                <ScalarProperty Name="NGAYKHOP" ColumnName="NGAYKHOP" />
+                <ScalarProperty Name="SOLUONGKHOP" ColumnName="SOLUONGKHOP" />
+                <ScalarProperty Name="GIAKHOP" ColumnName="GIAKHOP" />
+                <ScalarProperty Name="IDLENHDAT" ColumnName="IDLENHDAT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="CursorLoaiGD" FunctionName="CKModel.Store.CursorLoaiGD" />
+          <FunctionImportMapping FunctionImportName="SP_KHOPLENH_LO" FunctionName="CKModel.Store.SP_KHOPLENH_LO" />
+          <FunctionImportMapping FunctionImportName="SP_KHOPLENH_LO1" FunctionName="CKModel.Store.SP_KHOPLENH_LO" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

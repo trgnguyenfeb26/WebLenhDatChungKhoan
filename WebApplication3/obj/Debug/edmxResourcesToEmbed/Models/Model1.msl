@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CKModelStoreContainer" CdmEntityContainer="CKEntities">
+    <EntitySetMapping Name="LENHDAT">
+      <EntityTypeMapping TypeName="CKModel.LENHDAT">
+        <MappingFragment StoreEntitySet="LENHDAT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MACP" ColumnName="MACP" />
+          <ScalarProperty Name="NGAYDAT" ColumnName="NGAYDAT" />
+          <ScalarProperty Name="LOAIGD" ColumnName="LOAIGD" />
+          <ScalarProperty Name="LOAILENH" ColumnName="LOAILENH" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="GIADAT" ColumnName="GIADAT" />
+          <ScalarProperty Name="TRANGTHAILENH" ColumnName="TRANGTHAILENH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LENHKHOP">
+      <EntityTypeMapping TypeName="CKModel.LENHKHOP">
+        <MappingFragment StoreEntitySet="LENHKHOP">
+          <ScalarProperty Name="IDKHOP" ColumnName="IDKHOP" />
+          <ScalarProperty Name="NGAYKHOP" ColumnName="NGAYKHOP" />
+          <ScalarProperty Name="SOLUONGKHOP" ColumnName="SOLUONGKHOP" />
+          <ScalarProperty Name="GIAKHOP" ColumnName="GIAKHOP" />
+          <ScalarProperty Name="IDLENHDAT" ColumnName="IDLENHDAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CursorLoaiGD" FunctionName="CKModel.Store.CursorLoaiGD" />
+    <FunctionImportMapping FunctionImportName="SP_KHOPLENH_LO" FunctionName="CKModel.Store.SP_KHOPLENH_LO" />
+    <FunctionImportMapping FunctionImportName="SP_KHOPLENH_LO1" FunctionName="CKModel.Store.SP_KHOPLENH_LO" />
+  </EntityContainerMapping>
+</Mapping>
